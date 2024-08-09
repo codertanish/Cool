@@ -23,8 +23,8 @@ return timeInOven + preparationTimeForLayers(layers);
     public static void main(String[] args) {
         LasagnaDefinition myLasagna = new LasagnaDefinition();
         System.out.println("Expected Time: " + myLasagna.expectedMinutesInOven());
-        System.out.println(myLasagna.remaingMinutesInOven(20));
-        System.out.println(myLasagna.preparationTimeForLayers(3));
-        System.out.println(myLasagna.totalTimeInMinutes(20, 3));
+        System.out.println("Remaining Time: " + myLasagna.remaingMinutesInOven(20));
+        System.out.println("Layer Preparation Time: " + myLasagna.preparationTimeForLayers(3));
+        System.out.println("Total Preparation Time: " + myLasagna.totalTimeInMinutes(20, 3));
     }
 }
