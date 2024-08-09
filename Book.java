@@ -1,11 +1,15 @@
 public class Book {
 public static class BookDefinition {
-    String name = "Book";
-    String author = "Person";
-    double price = 10;
-    boolean soldStatus = false;
+    String name;
+    String author;
+    double price;
+    boolean soldStatus;
     
-    public BookDefinition(){
+    public BookDefinition(String name, String author, double price, boolean soldStatus){
+        this.name = name;
+        this.author = author;
+        this.price = price;
+        this.soldStatus = soldStatus;
 System.out.println("Object Created");
     }
 
@@ -25,7 +29,7 @@ System.out.println("Object Created");
 }
 
 public static void main(String[] args) {
-    BookDefinition myBook = new BookDefinition();
+    BookDefinition myBook = new BookDefinition("Book", "Person", 15, false);
     System.out.println("Book Name: " + myBook.name);
     System.out.println(myBook.getStatus());
     myBook.sell();
