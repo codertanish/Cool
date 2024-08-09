@@ -1,7 +1,7 @@
 public class Person {
     
     int age = 16;
-    String name = "Bob";
+    String name = "Keyaan";
     public void older() {
         age++;
     }
@@ -11,8 +11,7 @@ public class Person {
     }
 
     public void print(){
-        System.out.println(age);
-        System.out.println(name);
+        System.out.println(name +": " + age);
     }
     
     public void setAge(int newAge) {
@@ -21,7 +20,7 @@ public class Person {
 
     public void setAgeName(String name, int newAge) {
         age = newAge;
-        name = this.name;
+        this.name = name;
     }
 
     public int getAge() {

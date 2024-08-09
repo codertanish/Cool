@@ -5,7 +5,7 @@ public class action {
         bob.older();
         bob.print();
         bob.setAge(20);
-        bob.setAgeName("Bobber", 20);
+        bob.setAgeName("Bob", 20);
         bob.getAge();
         bob.print();
     }
