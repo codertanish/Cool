@@ -3,4 +3,12 @@ public class Lasagna {
 public double expectedMinutesInOven() {
     return LASAGNA_MINUTES_IN_OVEN;
 }
+
+public double remaingMinutesInOven(double timeInOven) {
+    return LASAGNA_MINUTES_IN_OVEN - timeInOven;
+}
+
+public double remainingMinutesInOven(int layersCount) {
+    return layersCount*2;
+}
 }
