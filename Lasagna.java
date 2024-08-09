@@ -1,5 +1,5 @@
 public class Lasagna {
 public double expectedMinutesInOven() {
-    return 40;
+    return 40.0;
 }
 }
